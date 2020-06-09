@@ -1,0 +1,24 @@
+.control-list {
+  width: 98px;
+  @extend %align-between;
+  &__item-link:hover {
+    .control-icon {
+      transition: all 200ms linear;
+      fill: $secondery-color;
+    }
+  }
+}
+.control-icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+.search-btn {
+  background-color: #00000000;
+  &:hover {
+    .control-icon {
+      transition: all 200ms linear;
+      fill: $secondery-color;
+    }
+  }
+}

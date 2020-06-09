@@ -1,0 +1,70 @@
+.section-services {
+  padding-top: 54px;
+}
+.section .above-title {
+  @include font($ff: $third-font, $fs: 1.5rem, $fw: 400, $lh: 1.2);
+  color: #333333;
+  margin-bottom: 18px;
+}
+.section-title {
+  @include font($ff: $first-font, $fs: 1.875rem, $fw: 700, $lh: 1.2);
+  color: #333333;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $first-color;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+.services-title {
+  margin-bottom: 64px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__item {
+    width: 380px;
+    padding-left: 82px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position-x: 20px;
+    &:not(:nth-child(n + 4)) {
+      margin-bottom: 98px;
+    }
+  }
+}
+.icon-clock {
+  background-image: url(../images/icons/icon-clock.svg);
+}
+.icon-graph {
+  background-image: url(../images/icons/icon-graph.svg);
+}
+.icon-comp {
+  background-image: url(../images/icons/icon-comp.svg);
+}
+.icon-book {
+  background-image: url(../images/icons/icon-book.svg);
+}
+.icon-home {
+  background-image: url(../images/icons/icon-home.svg);
+}
+.icon-image {
+  background-image: url(../images/icons/icon-image.svg);
+}
+.item-title {
+  @include font();
+  color: #333333;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.text {
+  margin: 0;
+  @include font($ff: $secondery-font, $fs: 0.9375rem, $fw: 400, $lh: 1.6);
+  color: #999999;
+}

@@ -1,0 +1,15 @@
+@import 'normalize.scss';
+@import './halpers/fonts';
+@import 'base.scss';
+@import './halpers/variables';
+@import './halpers/placeholders';
+@import './halpers/mixins';
+@import './components/conteiner.scss';
+
+@import './sections/header/header';
+@import './sections/header/logotype/logotype';
+@import './sections/header/navigation/navigation';
+@import './sections/header/controls/controls.scss';
+@import './sections/services/services';
+@import './sections/team/team';
+@import './sections/footer/footer';

@@ -1,0 +1,11 @@
+.site-logo__link {
+  font-family: $first-font;
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.sit-logo:hover .site-logo__link {
+  transition: all 200ms linear;
+  color: $secondery-color;
+}

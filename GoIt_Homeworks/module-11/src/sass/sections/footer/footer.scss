@@ -1,0 +1,43 @@
+.footer {
+  padding: 26px 0;
+  border-top: solid 1px #e5e5e5;
+  &__wrapper {
+    @extend %align-between;
+    align-items: center;
+  }
+  &__text {
+    @include font();
+    color: #333333;
+    margin: 0;
+  }
+  &__link {
+    display: inline;
+    color: $first-color;
+  }
+}
+.contact-form {
+  display: flex;
+  justify-content: end;
+  &__input {
+    padding-left: 12px;
+    width: 229px;
+    height: 40px;
+    border: solid 1px #e7e7e7;
+  }
+  &__btn {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    @include font();
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+  }
+}
+::placeholder {
+  @include font($ff: $secondery-font, $fs: 0.9375rem, $fw: 400, $lh: 1.6);
+  font-style: italic;
+  color: #6e4040;
+  text-align: left;
+}
